@@ -60,7 +60,7 @@ def create_boat(data: BoatIn, user: User = Depends(require_seller), db: Session 
     boat = create_draft(db, user)
     apply_input(db, boat, data)
     db.commit()
-    return boat_detail(boat)
+    return boat_detail(boat) | {"publish_errors": publish_errors(boat)}
 
 
 @router.get("/{boat_id}")

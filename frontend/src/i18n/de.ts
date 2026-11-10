@@ -1,0 +1,38 @@
+/** German locale. All enum labels and shared interface strings live here so
+ * that an English locale can be added by providing a second dictionary. */
+export const de = {
+  nav: { boats: "Boote entdecken", refurbished: "Refurbished", dealers: "Händler", how: "So funktioniert's",
+    favorites: "Merkliste", login: "Anmelden", sell: "Boot inserieren", account: "Mein Konto", logout: "Abmelden",
+    menu: "Menü", close: "Schließen", admin: "Administration", dealerArea: "Händlerbereich", messages: "Nachrichten" },
+  category: { jolle: "Jolle", sportboot: "Sportboot", kielboot: "Kielboot", daysailer: "Daysailer",
+    segelyacht: "Segelyacht", katamaran: "Katamaran", regattaboot: "Regattaboot" },
+  categoryPlural: { jolle: "Jollen", sportboot: "Sportboote", kielboot: "Kielboote", daysailer: "Daysailer",
+    segelyacht: "Segelyachten", katamaran: "Katamarane", regattaboot: "Regattaboote" },
+  condition: { used: "Gebraucht", refurbished: "Refurbished", restored: "Restauriert" },
+  refurbStatus: { none: "Kein Zustandsbericht", documentation_available: "Dokumentation vorhanden",
+    inspection_documented: "Prüfung dokumentiert", work_completed: "Arbeiten abgeschlossen" },
+  boatStatus: { draft: "Entwurf", pending: "In Prüfung", active: "Aktiv", paused: "Pausiert", rejected: "Abgelehnt",
+    archived: "Archiviert", removed: "Entfernt" },
+  sellerType: { private: "Privat", dealer: "Händler", verified_dealer: "Verifizierter Händler" },
+  dealerVerification: { unverified: "Nicht verifiziert", business_checked: "Unternehmensdaten geprüft",
+    verified: "Verifizierter Händler", refurb_documented: "Verifiziert · Refurbishment dokumentiert" },
+  section: { hull: "Rumpf", deck: "Deck", rigging: "Rigg", sails: "Segel", fittings: "Beschläge",
+    electronics: "Elektronik", engine: "Motor", interior: "Innenausbau", other: "Weitere Arbeiten" },
+  entryStatus: { inspected: "Geprüft", renewed: "Erneuert", repaired: "Repariert", not_inspected: "Nicht geprüft",
+    defect_reported: "Mangel angegeben" },
+  equipment: { main_sail: "Großsegel", jib: "Fock", genoa: "Genua", spinnaker: "Spinnaker", gennaker: "Gennaker",
+    electronics: "Elektronik", other: "Weitere Ausstattung" },
+  messageKind: { message: "Nachricht", viewing_request: "Besichtigungsanfrage", info_request: "Informationsanfrage" },
+  role: { buyer: "Käufer", private_seller: "Privater Verkäufer", dealer: "Händler", admin: "Administrator" },
+  reportReason: { fraud: "Betrugsverdacht", wrong_information: "Falsche Angaben", duplicate: "Doppeltes Inserat",
+    inappropriate: "Unangemessener Inhalt", other: "Sonstiges" },
+  sort: { newest: "Neueste Inserate", price_asc: "Niedrigster Preis", price_desc: "Höchster Preis", year_desc: "Neuestes Baujahr" },
+  spec: { length_m: "Länge", beam_m: "Breite", draft_m: "Tiefgang", displacement_kg: "Verdrängung",
+    hull_material: "Rumpfmaterial", sail_area_m2: "Segelfläche", mast_height_m: "Masthöhe", berths: "Kojen",
+    engine: "Motor", trailer: "Trailer" },
+  common: { loading: "Wird geladen …", retry: "Erneut versuchen", save: "Speichern", cancel: "Abbrechen",
+    delete: "Löschen", edit: "Bearbeiten", back: "Zurück", next: "Weiter", demo: "Demo-Inserat",
+    priceOnRequest: "Preis auf Anfrage", negotiable: "VB", errorTitle: "Das hat leider nicht geklappt" },
+} as const;
+
+export type Messages = typeof de;
